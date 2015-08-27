@@ -60,7 +60,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
 			$DB->query("INSERT INTO user(email,pass,passwd,transfer_enable,port,type) VALUES(?,?,?,?,?,?)", array($email,$pass,$ranpass,10737418240,$port,7));
 
-			$successinfo='<a href="login.php">注册成功！点此跳转到登陆界面！</a>';
+			$successinfo='<a href="login.php">注册成功！点此跳转到登录界面！</a>';
 			$errowinfo=NULL;
       $DB->CloseConnection();
  			}
@@ -77,11 +77,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sign-404 Not Found</title>
-<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">-->
 <link rel="stylesheet" href="style.css">
-<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="dist/js/formValidation.min.js"></script>
 <script src="dist/fr/bootstrap.min.js"></script>
 <script>
@@ -100,7 +100,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
           <ul class="nav nav-pills pull-right">
             <li role="presentation"><a href="index.html">首页</a></li>
             <li role="presentation"><a href="about.html">关于</a></li>
-            <li role="presentation"><a href="login.php">登陆</a></li>
+            <li role="presentation"><a href="login.php">登录</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">404 Not Found</h3>
